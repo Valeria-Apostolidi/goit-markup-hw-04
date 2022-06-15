@@ -42,16 +42,26 @@
 
         <ul class="list header-contacts">
           <li class="item contacts-item">
-            <a
-              class="header-contacts-link link"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <div class="email-tel">
+              <svg class="email" width="16" height="12">
+                <use href="/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              <a
+                class="header-contacts-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </div>
           </li>
           <li class="item contacts-item">
-            <a class="header-contacts-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <div class="email-tel">
+              <svg class="tel" width="16" height="12">
+                <use href="/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <a class="header-contacts-link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </div>
           </li>
         </ul>
       </div>
@@ -232,33 +242,68 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container">
-        <a class="logo link-l" href="./index.html" lang="en"
-          ><span class="web">Web</span><span class="studio">Studio</span></a
-        >
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">
-              <a
-                class="address-link link"
-                href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                г. Киев, пр-т Леси Украинки, 26</a
-              >
+        <div class="container-address">
+          <a class="logo link-l" href="./index.html" lang="en"
+            ><span class="web">Web</span><span class="studio">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">
+                <a
+                  class="address-link link"
+                  href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="contacts-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="contacts-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="container-media">
+          <h3 class="media-header">Присоединяйтесь</h3>
+          <ul class="media-list list">
+            <li class="media-item">
+              <a class="media-link link" href="">
+                <svg class="media-icon" width="20" height="20">
+                  <use href="/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="contacts-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="media-item">
+              <a class="media-link link" href="">
+                <svg class="media-icon" width="20" height="20">
+                  <use href="/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="contacts-link link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+            <li class="media-item">
+              <a class="media-link link" href="">
+                <svg class="media-icon" width="20px" height="20px">
+                  <use href="/symbol-defs.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link link" href="">
+                <svg class="media-icon" width="20px" height="20px">
+                  <use href="/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
