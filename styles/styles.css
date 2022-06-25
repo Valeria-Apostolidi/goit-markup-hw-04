@@ -129,21 +129,25 @@ p {
 }
 
 .header-contacts-link {
-  color: currentColor;
+  color: var(--text-font-color);
 }
 
 .email,
 .tel {
-  color: currentColor;
+  fill: currentColor;
 }
 
 .contacts-item {
-  fill: var(--text-font-color);
   color: var(--text-font-color);
 }
 
-.contacts-item:hover {
-  fill: var(--accent-color);
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-item:focus,
+.nav-item:hover {
   color: var(--accent-color);
 }
 
@@ -316,30 +320,39 @@ p {
 }
 
 .team-media-list {
-  margin: 16px 32px 0px 32px;
+  margin-top: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.team-media-item {
+  margin-right: 10px;
+}
+
+.team-media-item:last-child {
+  margin-right: 0;
 }
 
 .team-media-link {
   background-color: var(--add-font-color);
   color: var(--icon-color);
-  border: transparent;
   width: 44px;
   height: 44px;
   display: block;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-icom {
+  fill: currentColor;
 }
 
 .team-media-link:hover,
 .team-media-link:focus {
   background-color: var(--accent-color);
   color: var(--add-font-color);
-}
-
-.team-icom {
-  fill: currentColor;
-  margin: 12px;
 }
 
 .team-icom:hover,
@@ -356,27 +369,30 @@ p {
 
 .clients-item {
   padding: 16px 32px;
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-}
-
-.clients-item:hover,
-.clients-item:focus {
-  border-color: var(--accent-color);
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-icon {
-  fill: currentColor;
+.clients-site {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-site:hover,
+.clients-site:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-icon {
   fill: currentColor;
 }
 
@@ -432,22 +448,22 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--add-font-color);
-
   margin-bottom: 20px;
 }
 
 .media-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .media-link {
   background-color: var(--footer-icon-color);
-  border: transparent;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .media-link:hover,
@@ -456,7 +472,6 @@ p {
 }
 .media-icon {
   fill: var(--add-font-color);
-  margin: 12px;
 }
 
 /* --------------------- PORTFOLIO -------------------------*/
@@ -522,7 +537,6 @@ p {
 
 .projects-link:hover,
 .projects-link:focus {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
