@@ -130,11 +130,13 @@ p {
 
 .header-contacts-link {
   color: var(--text-font-color);
+  display: flex;
+  align-items: center;
 }
 
-.email,
-.tel {
+.contacts-icon {
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .contacts-item {
@@ -364,7 +366,6 @@ p {
 .clients-list {
   color: var(--icon-color);
   display: flex;
-  justify-content: center;
 }
 
 .clients-item:not(:last-child) {
@@ -450,6 +451,10 @@ p {
 .media-list {
   display: flex;
   justify-content: center;
+}
+
+.media-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .media-link {
